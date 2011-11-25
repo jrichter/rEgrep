@@ -9,6 +9,11 @@ puts %$Searching "#{files.strip}"$.blue
 puts "quit! to exit \n \n"
 puts "Enter Search Term".green
 
+Signal.trap('INT') do
+  puts "terminating...".red
+  Process.exit
+end
+
 while term = STDIN.gets
   term = term.chomp
   break if term == "quit!"
