@@ -1,4 +1,4 @@
-#! /home/justin/.rvm/rubies/ruby-1.9.3-preview1/bin/ruby -w
+#! ruby -w
 require 'colorize'
 
 keybinding_files = ARGV
