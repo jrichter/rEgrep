@@ -16,7 +16,7 @@ end
 
 while term = STDIN.gets
   term = term.chomp
-  break if term == "quit!"
+  Process.exit if term == "quit!"
 
   keybinding_files.each do |file|
     puts %$Searching "#{File.basename(file.to_s)}"$.on_white + "\n \n"
