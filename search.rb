@@ -1,6 +1,7 @@
 #! ruby -w
 require 'colorize'
 
+
 keybinding_files = ARGV
 files = ""
 keybinding_files.each {|file| files += File.basename(file) + " "}
